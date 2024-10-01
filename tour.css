@@ -63,18 +63,19 @@ header{
 }
 
 .ar{
-    width: 65px;
-    height: 65px;
-    background-color: white;
-    border-radius: 50px;
+    width: 1vw;
+}
+.ar i{
     margin-top: 5vh;
     margin-left: 47vw;
     cursor: pointer;
-    transition: all .1s ease-in;
+    font-size: 80px;
+    transition: all .2s ease-in-out;
+    color: white;
 }
-.ar:hover{
+.ar i:hover{
     transform: scale(1.2);
-    background-color: black;
+    color: black;
 }
 
 
