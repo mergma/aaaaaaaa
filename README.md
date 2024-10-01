@@ -1,1 +1,2 @@
 kerja
+TOO EASY!
