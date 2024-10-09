@@ -349,3 +349,42 @@ header{
     border-radius: 20px;
     height: 200px;
 }
+
+
+/* fooooooooooooooter*/
+.con{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+}
+
+footer{
+    color: white;
+    margin-top: 8vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #52514e;
+}
+
+.logos{
+    margin-top: 1vw;
+    display: flex;
+    font-size: 20px;
+    padding: 15px 10px 0px 0px;
+    gap: 2vw;
+    justify-content: space-around;
+}
+.logos i{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 1vw;
+    cursor: pointer;
+}
+.logos li{
+    list-style: none;
+}
+.img-con{
+    width: 100px;
+    height: auto;
+    margin: 1vw;
+}
