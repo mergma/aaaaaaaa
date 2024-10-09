@@ -3,9 +3,9 @@
     padding: 0px;
     font-family: "IBM Plex Mono", monospace;
     list-style: none;
+
     scroll-behavior: smooth;
 }
-
 a{
     text-decoration: none;
     color: black;
