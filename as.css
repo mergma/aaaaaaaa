@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "IBM Plex Mono", monospace;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.bgt-1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/as/fuji.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    text-align: center;
+} 
+
+.form-box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-container {
+    transform: scale(1);
+    width: auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2rem;
+}
+          
+.title-log {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.form-log {
+    margin-top: 2rem;
+}
+          
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+} 
+
+.input-group i{
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.5vw;
+    
+}  
+.input-group input {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: 0;
+    background-color: rgb(232, 243, 251);
+    padding: 0.85rem 1rem;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 2px 5px 10px rgb(91, 199, 198);
+}
+.input-group input:focus{
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+
+.signup a {
+    font-size: 14px;
+}        
+.signup a:hover {
+    text-decoration: underline rgba(167, 139, 250, 1);
+}
+.signup p{
+    color: black;
+}      
+.sign {
+    box-sizing: border-box;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: none;
+    display: block;
+    width: auto;
+    background-color: rgb(131, 194, 245);    
+    padding: 0.75rem;
+    text-align: center;
+    color: rgba(17, 24, 39, 1);
+    outline: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .20s ease;
+    font-size: 20px;
+}
+.sign:hover {
+    background-color: rgb(65, 243, 33);
+    transform: scale(1.1);
+    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+        
+}
+
+.signup {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #d7d7d7;
+    cursor: default;
+}
