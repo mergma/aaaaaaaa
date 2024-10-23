@@ -1,317 +1,768 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: "IBM Plex Mono", monospace;
-    list-style: none;
-
-    scroll-behavior: smooth;
-} 
-a{
-    text-decoration: none;
-    color: black;
-}
-header{
-    padding-left: 30vw;
-    position: fixed;
-    background-color: white;
-    width: 100vw;
-    z-index: 100;
-}
-.menu-tr ul {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-.menu-tr {
-    display: flex;
-    align-items: center;
-    padding: 1vw;
-}
-
-.logo-tour {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    cursor: pointer;
-}
-
-.menu-tr li {
-    margin-right: 20px;
-}
+@media only screen and (min-width: 1025px) {
 
 
-
-.bgt-1{
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/seoul.png);
-    background-position: center;
-    background-size: cover;
-    color: white;
-    height: 100vh;
-    text-align: center;
-} 
-.bgt-1 h1{
-    font-size: 70px;
-    font-style: italic;
-    text-shadow: 4px 2px 3px black;
-}
-.bgt-1 p{
-    font-size: 25px;
-    text-shadow: 4px 2px 3px black;
-}
-.bg-txt{
-    padding-top: 20vw;
-}
-
-.ar{
-    width: 1vw;
-}
-.ar i{
-    margin-top: 5vh;
-    margin-left: 47vw;
-    cursor: pointer;
-    font-size: 80px;
-    transition: all .2s ease-in-out;
-    color: white;
-}
-.ar i:hover{
-    transform: scale(1.2);
-    color: black;
-}
-
-
-/*                            asia                      */
-
-
-
-.t1{
-    background-color: rgb(204, 219, 219);
-    height: 90vh;
-    padding-top: 10vh;
-}
-.sec-t{
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    padding: 3vw;
-    text-shadow: 4px 2px 3px white;
-}
-.c-text{
-    padding: 1vw;
-}
-.c-img{
-    background-image: url(img/bangkok.png);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-1{
-    background-image: url(img/wall.png);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-2{
-    background-image: url(img/jeju.png);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.cards{
-    display: flex;
-    gap: 1.5vw;
-    justify-content: center;
-}
-.card{
-    padding: 1vw;
-    border-radius: 20px;
-    width: 390px;
-    height: 335px;
-    background-color: white;
-    box-shadow: 0 10px 15px -3px rgb(49, 50, 52),0 4px 6px -4px rgb(49, 50, 52);
-    transition: 0.3s ease-in-out;
-}
-.card h2{
-    font-size: 25px;
-}
-.prc{
-    width: 390px;
-    display: flex;
-    gap: 8vw;
-    align-items: center;
-}
-.ord{
-    border: none;
-    outline: none;
-    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
-    color: rgb(255 255 255);
-    text-transform: uppercase;
-    padding: 1vw 1.5vw;
-    background-color: rgb(33 150 243);
-    border-radius: 10px;
-    transition: all 0.08s ease-in;
-    cursor: pointer;
-}
-.ord:hover{
-    background-color: rgb(65, 243, 33);
-    transform: scale(1.2);
-}
-.mor{
-    box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
-    color: rgb(255 255 255);
-    text-transform: uppercase;
-    padding: 1vw 1.5vw;
-    background-color: rgb(33 150 243);
-    border-radius: 10px;
-    transition: all 0.08s ease-in;
-    cursor: pointer;
-    width: 6vw;
-    margin-top: 5vh;
-    margin-left: 45vw;
-}
-.mor p{
-    text-align: center;
-}
-.mor:hover{
-    transform: scale(1.2);
-}
+    *{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-family: "IBM Plex Mono", monospace;
+        scroll-behavior: smooth;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    header{
+        padding-left: 36vw;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        z-index: 100;
+    }
+    .menu-tr ul {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menu-tr {
+        display: flex;
+        align-items: center;
+        padding: 1vw;
+    }
+    
+    .logo-tour {
+        width: 100px;
+        height: auto;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    
+    .menu-tr li {
+        margin-right: 20px;
+    }
+    
+    
+    
+    .bgt-1{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/seoul.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+        text-align: center;
+    } 
+    .bgt-1 h1{
+        font-size: 70px;
+        font-style: italic;
+        text-shadow: 4px 2px 3px black;
+    }
+    .bgt-1 p{
+        font-size: 25px;
+        text-shadow: 4px 2px 3px black;
+    }
+    .bg-txt{
+        padding-top: 20vw;
+    }
+    .ar{
+        width: 1vw;
+    }
+    .ar i{
+        margin-top: 5vh;
+        margin-left: 47vw;
+        cursor: pointer;
+        font-size: 80px;
+        transition: all .2s ease-in-out;
+        color: white;
+    }
+    .ar i:hover{
+        transform: scale(1.2);
+        color: black;
+    }
+    
+    
+    /*                            asia                      */
+    
 
 
+    .t1{
+        background-color: rgb(204, 219, 219);
+        height: auto;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        padding: 3vw;
+        text-shadow: 4px 2px 3px white;
+    }
+    .c-text{
+        padding: 1vw;
+    }
+    .c-img{
+        background-image: url(img/bangkok.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-1{
+        background-image: url(img/wall.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-2{
+        background-image: url(img/jeju.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .all-cards{
+        display: flex;
+        gap: 1.5vw;
+        justify-content: center;
+    }
+    .card{
+        padding: 1vw;
+        border-radius: 20px;
+        width: 390px;
+        height: fit-content;
+        background-color: white;
+        box-shadow: 0 10px 15px -3px rgb(49, 50, 52),0 4px 6px -4px rgb(49, 50, 52);
+        overflow: hidden; 
+        transition: all 0.5s ease;
+        margin-bottom: 20px; /* Space between rows */
+          }
+    
+    .card h2{
+        font-size: 25px;
+    }
+    
+    .desc {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; 
+      }
+      
+      .card:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+    
+      .prc{
+        width: 390px;
+        display: flex;  
+        gap: 8vw;
+        align-items: center;
+    }
+    
+      .ord{
+        border: none;
+        outline: none;
+        box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        padding: 1vw 1.5vw;
+        background-color: rgb(33 150 243);
+        border-radius: 10px;
+        transition: all 0.08s ease-in;
+        cursor: pointer;
+    }
+    .ord:hover{
+        background-color: rgb(65, 243, 33);
+        transform: scale(1.2);
+    }
+    .mor{
+        box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        padding: 1vw 1.5vw;
+        background-color: rgb(33 150 243);
+        border-radius: 10px;
+        transition: all 0.08s ease-in;
+        cursor: pointer;
+        width: 6vw;
+        margin-top: 5vh;
+        margin-left: 45vw;
+    }
+    .mor p{
+        text-align: center;
+    }
+    .mor:hover{
+        transform: scale(1.2);
+    }
+    .card2:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+      .card3:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+    /*                  europe                  */
+    
+    
+    
+    .t2{
+        background-color: rgb(29, 29, 29);
+        height: fit-content;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+        color: white;
+    }
+    .c-img-3{
+        background-image: url(img/paris.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-4{
+        background-image: url(img/oslo.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-5{
+        background-image: url(img/alpin.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    /*              amerika             */
+    
+    
+    .t3{
+        background-color: rgb(194, 194, 194);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+    }
+    .c-img-6{
+        background-image: url(img/niagara.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-7{
+        background-image: url(img/bahamas.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-8{
+        background-image: url(img/macu\ picu.jpeg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    
+    /*              oceania             */
+    
+    
+    
+    .t4{
+        background-color: rgb(29, 29, 29);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+        color: white;
+    }
+    .c-img-9{
+        background-image: url(img/reef.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-10{
+        background-image: url(img/fiji.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-11{
+        background-image: url(img/tuvalu.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    /*              afrika             */
+    
+    
+    
+    .t5{
+        background-color: rgb(194, 194, 194);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+    }
+    .c-img-12{
+        background-image: url(img/mesir.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-13{
+        background-image: url(img/serengeti.webp);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-14{
+        background-image: url(img/kruger.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
 
-/*                  europe                  */
-
-
-
-.t2{
-    background-color: rgb(29, 29, 29);
-    height: 90vh;
-    padding-top: 10vh;
 }
-.sec-t{
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 4px 2px 3px rgb(0, 0, 0);
-    color: white;
-}
-.c-img-3{
-    background-image: url(img/paris.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-4{
-    background-image: url(img/oslo.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-5{
-    background-image: url(img/alpin.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
+@media only screen and (min-width: 2559px) {
 
 
 
-/*              amerika             */
+    *{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-family: "IBM Plex Mono", monospace;
+        scroll-behavior: smooth;
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    header{
+        padding-left: 38vw;
+        position: fixed;
+        background-color: white;
+        width: 100vw;
+        z-index: 100;
+        font-size: 30px;
+    }
+    .menu-tr ul {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .menu-tr {
+        display: flex;
+        align-items: center;
+        padding: 1vw;
+    }
+    
+    .logo-tour {
+        width: 130px;
+        height: auto;
+        margin-right: 20px;
+        cursor: pointer;
+    }
+    
+    .menu-tr li {
+        margin-right: 20px;
+    }
+    
+    
+    
+    .bgt-1{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/seoul.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+        text-align: center;
+    } 
+    .bgt-1 h1{
+        font-size: 130px;
+        font-style: italic;
+        text-shadow: 4px 2px 3px black;
+    }
+    .bgt-1 p{
+        font-size: 55px;
+        text-shadow: 4px 2px 3px black;
+    }
+    .bg-txt{
+        padding-top: 20vw;
+    }
+    .ar{
+        width: 4vw;
+    }
+    .ar i{
+        margin-top: 5vh;
+        margin-left: 47vw;
+        cursor: pointer;
+        font-size: 80px;
+        transition: all .2s ease-in-out;
+        color: white;
+    }
+    .ar i:hover{
+        transform: scale(1.2);
+        color: black;
+    }
+    
+    
+    /*                            asia                      */
+    
 
 
-.t3{
-    background-color: rgb(194, 194, 194);
-    height: 90vh;
-    padding-top: 10vh;
-}
-.sec-t{
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 4px 2px 3px rgb(0, 0, 0);
-}
-.c-img-6{
-    background-image: url(img/niagara.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-7{
-    background-image: url(img/bahamas.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-8{
-    background-image: url(img/macu\ picu.jpeg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-
-
-
-
-/*              oceania             */
-
-
-
-.t4{
-    background-color: rgb(29, 29, 29);
-    height: 90vh;
-    padding-top: 10vh;
-}
-.sec-t{
-    font-size: 35px;
-    font-style: italic;
-    text-align: center;
-    text-shadow: 4px 2px 3px rgb(0, 0, 0);
-    color: white;
-}
-.c-img-9{
-    background-image: url(img/reef.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-10{
-    background-image: url(img/fiji.jpg);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
-.c-img-11{
-    background-image: url(img/tuvalu.png);
-    background-position: center;
-    background-size: cover;
-    box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-    border-radius: 20px;
-    height: 200px;
-}
+    .t1{
+        background-color: rgb(204, 219, 219);
+        height: auto;
+        padding-top: 4vh;
+    }
+    .sec-t{
+        font-size: 55px;
+        font-style: italic;
+        text-align: center;
+        padding: 3vw;
+        text-shadow: 4px 2px 3px white;
+    }
+    .c-text{
+        padding: 1vw;
+    }
+    .c-img{
+        background-image: url(img/bangkok.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-1{
+        background-image: url(img/wall.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-2{
+        background-image: url(img/jeju.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .all-cards{
+        display: flex;
+        gap: 1.5vw;
+        justify-content: center;
+    }
+    .card{
+        padding: 1vw;
+        border-radius: 20px;
+        width: 450px;
+        height: fit-content;
+        background-color: white;
+        box-shadow: 0 10px 15px -3px rgb(49, 50, 52),0 4px 6px -4px rgb(49, 50, 52);
+        overflow: hidden; 
+        transition: all 0.5s ease;
+        margin-bottom: 20px; /* Space between rows */
+          }
+    
+    .card h2{
+        font-size: 25px;
+    }
+    
+    .desc {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s ease; 
+      }
+      
+      .card:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+    
+      .prc{
+        width: 390px;
+        display: flex;  
+        gap: 8vw;
+        align-items: center;
+    }
+    
+      .ord{
+        border: none;
+        outline: none;
+        box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        padding: 1vw 1.5vw;
+        background-color: rgb(33 150 243);
+        border-radius: 10px;
+        transition: all 0.08s ease-in;
+        cursor: pointer;
+    }
+    .ord:hover{
+        background-color: rgb(65, 243, 33);
+        transform: scale(1.2);
+    }
+    .mor{
+        box-shadow: 0 4px 6px -1px rgba(33,150,243,.4),0 2px 4px -2px rgba(33,150,243,.4);
+        color: rgb(255 255 255);
+        text-transform: uppercase;
+        padding: 1vw 1.5vw;
+        background-color: rgb(33 150 243);
+        border-radius: 10px;
+        transition: all 0.08s ease-in;
+        cursor: pointer;
+        width: 6vw;
+        margin-top: 5vh;
+        margin-left: 45vw;
+    }
+    .mor p{
+        text-align: center;
+    }
+    .mor:hover{
+        transform: scale(1.2);
+    }
+    .card2:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+      .card3:hover .desc {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 300px;
+      }
+    /*                  europe                  */
+    
+    
+    
+    .t2{
+        background-color: rgb(29, 29, 29);
+        height: fit-content;
+        padding-top: 4vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+        color: white;
+    }
+    .c-img-3{
+        background-image: url(img/paris.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-4{
+        background-image: url(img/oslo.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-5{
+        background-image: url(img/alpin.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    /*              amerika             */
+    
+    
+    .t3{
+        background-color: rgb(194, 194, 194);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+    }
+    .c-img-6{
+        background-image: url(img/niagara.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-7{
+        background-image: url(img/bahamas.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-8{
+        background-image: url(img/macu\ picu.jpeg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    
+    /*              oceania             */
+    
+    
+    
+    .t4{
+        background-color: rgb(29, 29, 29);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+        color: white;
+    }
+    .c-img-9{
+        background-image: url(img/reef.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-10{
+        background-image: url(img/fiji.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-11{
+        background-image: url(img/tuvalu.png);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    
+    
+    
+    /*              afrika             */
+    
+    
+    
+    .t5{
+        background-color: rgb(194, 194, 194);
+        height: 90vh;
+        padding-top: 10vh;
+    }
+    .sec-t{
+        font-size: 35px;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 4px 2px 3px rgb(0, 0, 0);
+    }
+    .c-img-12{
+        background-image: url(img/mesir.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-13{
+        background-image: url(img/serengeti.webp);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
+    .c-img-14{
+        background-image: url(img/kruger.jpg);
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
+        border-radius: 20px;
+        height: 200px;
+    }
 
 
 
 /*              afrika             */
+
 
 
 .t5{
@@ -349,41 +800,4 @@ header{
     border-radius: 20px;
     height: 200px;
 }
-
-
-/* fooooooooooooooter*/
-.con{
-    font-family: "IBM Plex Mono", monospace;
-    font-weight: 200;
-    font-style: italic;
-}
-
-footer{
-    color: white;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
-    background-color: #52514e;
-}
-
-.logos{
-    margin-top: 1vw;
-    display: flex;
-    font-size: 20px;
-    padding: 15px 10px 0px 0px;
-    gap: 2vw;
-    justify-content: space-around;
-}
-.logos i{
-    border: 2px solid white;
-    border-radius: 100%;
-    padding: 1vw;
-    cursor: pointer;
-}
-.logos li{
-    list-style: none;
-}
-.img-con{
-    width: 100px;
-    height: auto;
-    margin: 1vw;
 }
