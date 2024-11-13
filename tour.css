@@ -77,7 +77,6 @@
     }
     .ar i:hover{
         transform: scale(1.2);
-        color: black;
     }
     
     
@@ -89,6 +88,7 @@
         background-color: rgb(204, 219, 219);
         height: auto;
         padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     .sec-t{
         font-size: 35px;
@@ -163,6 +163,9 @@
         gap: 8vw;
         align-items: center;
     }
+    .prc h3{
+        font-size: 17px;
+    }
     
       .ord{
         border: none;
@@ -217,6 +220,7 @@
         background-color: rgb(29, 29, 29);
         height: fit-content;
         padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     .sec-t{
         font-size: 35px;
@@ -249,133 +253,46 @@
         border-radius: 20px;
         height: 200px;
     }
-    
-    
-    
-    /*              amerika             */
-    
-    
-    .t3{
-        background-color: rgb(194, 194, 194);
-        height: 90vh;
-        padding-top: 10vh;
-    }
-    .sec-t{
-        font-size: 35px;
-        font-style: italic;
-        text-align: center;
-        text-shadow: 4px 2px 3px rgb(0, 0, 0);
-    }
-    .c-img-6{
-        background-image: url(img/niagara.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-7{
-        background-image: url(img/bahamas.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-8{
-        background-image: url(img/macu\ picu.jpeg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    
-    
-    
-    
-    /*              oceania             */
-    
-    
-    
-    .t4{
-        background-color: rgb(29, 29, 29);
-        height: 90vh;
-        padding-top: 10vh;
-    }
-    .sec-t{
-        font-size: 35px;
-        font-style: italic;
-        text-align: center;
-        text-shadow: 4px 2px 3px rgb(0, 0, 0);
-        color: white;
-    }
-    .c-img-9{
-        background-image: url(img/reef.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-10{
-        background-image: url(img/fiji.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-11{
-        background-image: url(img/tuvalu.png);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    
-    
-    
-    /*              afrika             */
-    
-    
-    
-    .t5{
-        background-color: rgb(194, 194, 194);
-        height: 90vh;
-        padding-top: 10vh;
-    }
-    .sec-t{
-        font-size: 35px;
-        font-style: italic;
-        text-align: center;
-        text-shadow: 4px 2px 3px rgb(0, 0, 0);
-    }
-    .c-img-12{
-        background-image: url(img/mesir.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-13{
-        background-image: url(img/serengeti.webp);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
-    .c-img-14{
-        background-image: url(img/kruger.jpg);
-        background-position: center;
-        background-size: cover;
-        box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
-        border-radius: 20px;
-        height: 200px;
-    }
+
+    /*    footer    */
+
+
+.con{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+}
+
+footer{
+    color: white;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #52514e;
+}
+
+.logos{
+    margin-top: 1vw;
+    display: flex;
+    font-size: 20px;
+    padding: 15px 10px 0px 0px;
+    gap: 2vw;
+    justify-content: space-around;
+}
+.logos i{
+    color: white;
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 1vw;
+    cursor: pointer;
+}
+.logos li{
+    list-style: none;
+}
+.img-con{
+    width: 100px;
+    height: auto;
+    margin: 1vw;
+}
 
 }
 @media only screen and (min-width: 2559px) {
@@ -799,5 +716,43 @@
     box-shadow: 0 10px 15px -3px rgba(33, 149, 243, 0.596),0 4px 6px -4px rgba(33, 149, 243, 0.613);
     border-radius: 20px;
     height: 200px;
+}
+
+/*    footer    */
+.con{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 200;
+    font-style: italic;
+}
+
+footer{
+    color: white;
+    margin-top: 8vw;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+    background-color: #52514e;
+}
+
+.logos{
+    margin-top: 1vw;
+    display: flex;
+    font-size: 20px;
+    padding: 15px 10px 0px 0px;
+    gap: 2vw;
+    justify-content: space-around;
+}
+.logos i{
+    border: 2px solid white;
+    border-radius: 100%;
+    padding: 1vw;
+    cursor: pointer;
+}
+.logos li{
+    list-style: none;
+}
+.img-con{
+    width: 100px;
+    height: auto;
+    margin: 1vw;
 }
 }
