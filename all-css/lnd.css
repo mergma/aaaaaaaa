@@ -221,3 +221,6 @@ footer{
     height: auto;
     margin: 1vw;
 }
+footer a{
+    color: white;
+}
