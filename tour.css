@@ -30,7 +30,6 @@
         width: 100vw;
         z-index: 100;
         display: flex;
-        justify-content: flex-end;
     }
     .menu-tr ul {
         display: flex;
@@ -333,7 +332,6 @@ footer{
         z-index: 100;
         font-size: 30px;
         display: flex;
-        justify-content: flex-end;
     }
     .menu-tr ul {
         display: flex;
