@@ -1,3 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-family: "IBM Plex Mono", monospace;
+    scroll-behavior: smooth;
+}
+
+
 @media only screen and (min-width: 1025px) {
 
 
@@ -14,11 +23,14 @@
         color: black;
     }
     header{
-        padding-left: 36vw;
+        padding-left: 0;
+        padding-right: 36vw;
         position: fixed;
         background-color: white;
         width: 100vw;
         z-index: 100;
+        display: flex;
+        justify-content: flex-end;
     }
     .menu-tr ul {
         display: flex;
@@ -295,9 +307,10 @@ footer{
 }
 
 }
+
+
+
 @media only screen and (min-width: 2559px) {
-
-
 
     *{
         margin: 0px;
@@ -312,12 +325,15 @@ footer{
         color: black;
     }
     header{
-        padding-left: 38vw;
+        padding-left: 0;
+        padding-right: 38vw;
         position: fixed;
         background-color: white;
         width: 100vw;
         z-index: 100;
         font-size: 30px;
+        display: flex;
+        justify-content: flex-end;
     }
     .menu-tr ul {
         display: flex;
@@ -755,4 +771,141 @@ footer{
     height: auto;
     margin: 1vw;
 }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "IBM Plex Mono", monospace;
+        scroll-behavior: smooth;
+    }
+
+    /* Header adjustments */
+    header {
+        padding-right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-tr {
+        padding: 15px;
+        justify-content: center;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .logo-tour {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .menu-tr li {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    /* Hero section adjustments */
+    .bgt-1{
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(img/seoul.png);
+        background-position: center;
+        background-size: cover;
+        color: white;
+        height: 68vh;
+        text-align: center;
+    }
+    .bgt-1 h1 {
+        font-size: 45px;
+        font-style: italic;
+        text-shadow: 4px 2px 3px black;
+    }
+
+    .bgt-1 p {
+        font-size: 25px;
+        padding-top: 10px;
+        text-shadow: 4px 2px 3px black;
+    }
+
+    .bg-txt {
+        padding-top: 25vh;
+    }
+
+
+    /*arrow*/
+    .ar{
+        width: 100vw;
+    }
+    .ar i{
+        margin-top: 5vh;
+        cursor: pointer;
+        font-size: 80px;
+        transition: all .2s ease-in-out;
+        color: white;
+    }
+    .ar i:hover{
+        transform: scale(1.2);
+    }
+
+
+    /* Cards section adjustments */
+    .all-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .c-img, .c-img-1, .c-img-2, .c-img-3, .c-img-4, .c-img-5,
+    .c-img-6, .c-img-7, .c-img-8, .c-img-9, .c-img-10, .c-img-11,
+    .c-img-12, .c-img-13, .c-img-14 {
+        height: 150px;
+    }
+
+    .prc {
+        width: 100%;
+        gap: 4vw;
+    }
+
+    .mor {
+        width: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    /* Section title adjustments */
+    .sec-t {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    /* Footer adjustments */
+    .logos {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logos i {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Section height adjustments */
+    .t1, .t2, .t3, .t4, .t5 {
+        height: auto;
+        padding: 40px 15px;
+    }
+
+    .con-img img{
+        width: 2px;
+    }
 }
