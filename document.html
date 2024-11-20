@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>-- Documents -----------------------------</title>
-  <link rel="icon" type="image/x-icon" href="img/logo-w.png">
+  <title>Document</title>
   <link rel="stylesheet" href="all-css/documents.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,9 +15,9 @@
   <center>
   <div class="navbar">
     <img src="img/logo-b.png" alt="logo" class="logo">
-    <div class="header-container">
-      <h2 class="headerrr">Documents & Visa</h2>
-      <h2 class="headerrr-mobilelogo">Documents <br>&<br> Visa</h2>
+    <div class="header-container" style="display: flex; justify-content: center; align-items: center; height: 100%;">
+      <h2 class="headerrr" style="margin: 0;">Documents & Visa</h2>
+      <h2 class="headerrr-mobilelogo" style="margin: 0;">Documents <br>&<br> Visa</h2>
     </div>
     <div class="thenav">
       <a href="index.html" style="text-decoration: none;">Home</a>
@@ -28,46 +27,65 @@
     <img src="img/Content.png" alt="content" class="contentimg">
   </div>
 
-  <div class="container">
-    <div class="group1">
-      <div class="visa-req">
-        <h1>Visa</h1>
-        <form>
+  <form id="travel-documents-form">
+    <div class="container">
+      <div class="group1">  
+        <div class="visa-req">
+          <h1>Visa</h1>
           <fieldset>
             <legend>Visa Information</legend><br>
             <label for="visa-citizenship">Country of Citizenship</label><br>
             <input type="text" id="visa-citizenship" name="visa-citizenship" placeholder="Enter your country" required><br>
-  
+
             <label for="visa-destination">Destination</label><br>
             <input type="text" id="visa-destination" name="visa-destination" placeholder="Enter your destination" required><br>
-  
+
             <label for="visa-purpose">Travel Purpose</label><br>
-            <input type="text" id="visa-purpose" name="visa-purpose" placeholder="Enter your purpose" required>
+            <input type="text" id="visa-purpose" name="visa-purpose" placeholder="Enter your purpose" required><br>
+
+            <label for="visa-duration">Duration of Stay</label><br>
+            <input type="text" id="visa-duration" name="visa-duration" placeholder="Enter duration" required><br>
+
+            <label for="visa-date">Intended Travel Date</label><br>
+            <input type="date" id="visa-date" name="visa-date" required><br>
+
+            <label for="visa-passport">Passport Number</label><br>
+            <input type="text" id="visa-passport" name="visa-passport" placeholder="Enter passport number" required><br>
           </fieldset>
-        </form>
+        </div>
       </div>
-    </div>
-  
-    <div class="group2">
-      <div class="visa-req">
-        <h1>Health Certificate</h1>
+
+      <div class="group2">
+        <div class="visa-req">
+          <h1>Health Certificate</h1>
           <fieldset>
             <legend>Health Information</legend><br>
-            <label for="health-insurance">Insurance</label><br>
-            <input type="text" id="health-insurance" name="health-insurance" placeholder="Enter your insurance" required><br>
-  
-            <label for="health-destination">Destination</label><br>
-            <input type="text" id="health-destination" name="health-destination" placeholder="Enter your destination" required><br>
-  
-            <label for="health-purpose">Travel Purpose</label><br>
-            <input type="text" id="health-purpose" name="health-purpose" placeholder="Enter your purpose" required>
+            <label for="health-name">Full Name</label><br>
+            <input type="text" id="health-name" name="health-name" placeholder="Enter your full name" required><br>
+
+            <label for="health-dob">Date of Birth</label><br>
+            <input type="date" id="health-dob" name="health-dob" required><br>
+
+            <label for="health-type">Type of Certificate</label><br>
+            <select id="health-type" name="health-type" required>
+              <option value="">Select certificate type</option>
+              <option value="covid">COVID-19 Test</option>
+              <option value="vaccination">Vaccination Record</option>
+              <option value="medical">Medical Fitness</option>
+            </select><br>
+
+            <label for="health-certificate-upload">Upload Health Certificate</label><br>
+            <input type="file" id="health-certificate-upload" name="health-certificate-upload" accept=".pdf,.jpg,.png" required><br>
+
+            <label for="health-issue-date">Certificate Issue Date</label><br>
+            <input type="date" id="health-issue-date" name="health-issue-date" required><br>
           </fieldset>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="visa-req">
-    <h1>Travel Insurance</h1>
+
+    <div class="visa-req">
+      <h1>Travel Insurance</h1>
       <fieldset>
         <legend>Insurance Information</legend><br>
         <label for="insurance-citizenship">Country of Citizenship</label><br>
@@ -77,11 +95,22 @@
         <input type="text" id="insurance-destination" name="insurance-destination" placeholder="Enter your destination" required><br>
 
         <label for="insurance-purpose">Travel Purpose</label><br>
-        <input type="text" id="insurance-purpose" name="insurance-purpose" placeholder="Enter your purpose" required>
+        <input type="text" id="insurance-purpose" name="insurance-purpose" placeholder="Enter your purpose" required><br>
+
+        <label for="insurance-duration">Duration of Stay</label><br>
+        <input type="text" id="insurance-duration" name="insurance-duration" placeholder="Enter duration in days" required><br>
+
+        <label for="insurance-coverage">Coverage Amount</label><br>
+        <input type="number" id="insurance-coverage" name="insurance-coverage" placeholder="Enter coverage amount in USD" required><br>
+
+        <label for="insurance-upload">Upload Existing Insurance (if any)</label><br>
+        <input type="file" id="insurance-upload" name="insurance-upload" accept=".pdf,.jpg,.png"><br>
       </fieldset>
-  </div>
-  <input type="submit" value="Submit" class="subit">
-</form>
+    </div>
+
+    <input type="submit" value="Submit" class="subit">
+  </form>
+
   <footer>
     <div class="con">
         <h1>Contact Us</h1>
