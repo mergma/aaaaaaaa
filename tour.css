@@ -766,7 +766,14 @@ footer{
         padding-top: 25vh;
     }
 
+    .t1{
+        background-color: #52514e;
+    }
 
+    .t2{
+        background-color: #111;
+    }
+    
     /*arrow*/
     .ar{
         width: 100vw;
@@ -781,7 +788,6 @@ footer{
     .ar i:hover{
         transform: scale(1.2);
     }
-
 
     /* Cards section adjustments */
     .all-cards {
