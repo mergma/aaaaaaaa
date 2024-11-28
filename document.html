@@ -34,6 +34,9 @@
           <h1>Visa</h1>
           <fieldset>
             <legend>Visa Information</legend><br>
+            <label for="full-name">Full Name</label><br>
+            <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required><br>
+
             <label for="visa-citizenship">Country of Citizenship</label><br>
             <input type="text" id="visa-citizenship" name="visa-citizenship" placeholder="Enter your country" required><br>
 
@@ -51,6 +54,16 @@
 
             <label for="visa-passport">Passport Number</label><br>
             <input type="text" id="visa-passport" name="visa-passport" placeholder="Enter passport number" required><br>
+
+            <label for="visa-gender">Gender</label><br>
+            <select id="visa-gender" name="visa-gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select><br>
+
+            <label for="visa-passport-photo">Passport Photo</label><br>
+            <input type="file" id="visa-passport-photo" name="visa-passport-photo" accept=".jpg, .jpeg, .png" required><br>
           </fieldset>
         </div>
       </div>
@@ -78,6 +91,9 @@
             <input type="file" id="health-certificate-upload" name="health-certificate-upload" accept=".pdf,.jpg,.png" required><br>
 
             <label for="health-issue-date">Certificate Issue Date</label><br>
+            <input type="date" id="health-issue-date" name="health-issue-date" required><br>
+
+            <label for="health-issue-date">Certificate Expiry Date</label><br>
             <input type="date" id="health-issue-date" name="health-issue-date" required><br>
           </fieldset>
         </div>
