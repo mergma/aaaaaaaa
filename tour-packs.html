@@ -11,17 +11,59 @@
 </head>
 <body>
 <header>
+
+
+    <!-- 
+    
+    
+███╗░░░███╗░█████╗░██████╗░██╗██╗░░░░░███████╗  ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
+████╗░████║██╔══██╗██╔══██╗██║██║░░░░░██╔════╝  ████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
+██╔████╔██║██║░░██║██████╦╝██║██║░░░░░█████╗░░  ██╔██╗██║███████║╚██╗░██╔╝██████╦╝███████║██████╔╝
+██║╚██╔╝██║██║░░██║██╔══██╗██║██║░░░░░██╔══╝░░  ██║╚████║██╔══██║░╚████╔╝░██╔══██╗██╔══██║██╔══██╗
+██║░╚═╝░██║╚█████╔╝██████╦╝██║███████╗███████╗  ██║░╚███║██║░░██║░░╚██╔╝░░██████╦╝██║░░██║██║░░██║
+╚═╝░░░░░╚═╝░╚════╝░╚═════╝░╚═╝╚══════╝╚══════╝  ╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝
+    
+    -->
+    <div class="navmobile" style="display:none;" id="mySidebar">
+        <button class="w3-bar-item w3-button w3-large"
+        onclick="w3_close()">&times;</button>
+        <div class="nav-links">
+            <a href="./index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="#as" class="w3-bar-item w3-button" onclick="hide()">Asia</a>
+            <a href="#eu" class="w3-bar-item w3-button" onclick="hide()">Europe</a>
+            <a href="#co" class="w3-bar-item w3-button" onclick="hide()"><li>Contact</li></a>
+        </div>
+      </div>
+    <button class="navmobile-toggle" id="sidbar" onclick="w3_open()">&#9776;</button>
+
+
+
+
+
+
+          <!-- 
+      
+        
+██████╗░███████╗░██████╗██╗░░██╗████████╗░█████╗░██████╗░  ███╗░░██╗░█████╗░██╗░░░██╗██████╗░░█████╗░██████╗░
+██╔══██╗██╔════╝██╔════╝██║░██╔╝╚══██╔══╝██╔══██╗██╔══██╗  ████╗░██║██╔══██╗██║░░░██║██╔══██╗██╔══██╗██╔══██╗
+██║░░██║█████╗░░╚█████╗░█████═╝░░░░██║░░░██║░░██║██████╔╝  ██╔██╗██║███████║╚██╗░██╔╝██████╦╝███████║██████╔╝
+██║░░██║██╔══╝░░░╚═══██╗██╔═██╗░░░░██║░░░██║░░██║██╔═══╝░  ██║╚████║██╔══██║░╚████╔╝░██╔══██╗██╔══██║██╔══██╗
+██████╔╝███████╗██████╔╝██║░╚██╗░░░██║░░░╚█████╔╝██║░░░░░  ██║░╚███║██║░░██║░░╚██╔╝░░██████╦╝██║░░██║██║░░██║
+╚═════╝░╚══════╝╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░░╚════╝░╚═╝░░░░░  ╚═╝░░╚══╝╚═╝░░╚═╝░░░╚═╝░░░╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝
+
+      -->
     <div class="menu-tr">
-    <a href="#h"><img src="img/logo-b.png" alt="" class="logo-tour"></a>
-    <ul>
-        <a href="./index.html"><b><li>Home</li></b></a>
-        <a href="#as"><li>Asia</li></a>
-        <a href="#eu"><li>Europe</li></a>
-    </ul>
+        <a href="#h"><img src="img/logo-b.png" alt="" class="logo-tour"></a>
+        <ul class="menu-aa">
+            <a href="./index.html"><b><li>Home</li></b></a>
+            <a href="#as"><li>Asia</li></a>
+            <a href="#eu"><li>Europe</li></a>
+            <a href="#co"><li>Contact</li></a>
+        </ul>
     </div>
 </header>
 
-<section class="bgt-1" id="h">
+<section class="bgt-1" id="h" id="bgt-11">
 <div class="bg-txt">
     <h1>Tour Packages</h1>
     <p>Wherever you wish to go~</p>
@@ -183,7 +225,7 @@
   </section>
 
 <footer>
-    <div class="con" id="footer">
+    <div class="con" id="co">
         <center><h1>Contact Us</h1></center>
     </div>
         <center>
@@ -203,4 +245,45 @@
     </footer>
 
 </body>
+
+<!-- 
+
+
+███╗░░██╗░█████╗░  ████████╗░█████╗░██╗░░░██╗░█████╗░██╗░░██╗
+████╗░██║██╔══██╗  ╚══██╔══╝██╔══██╗██║░░░██║██╔══██╗██║░░██║
+██╔██╗██║██║░░██║  ░░░██║░░░██║░░██║██║░░░██║██║░░╚═╝███████║
+██║╚████║██║░░██║  ░░░██║░░░██║░░██║██║░░░██║██║░░██╗██╔══██║
+██║░╚███║╚█████╔╝  ░░░██║░░░╚█████╔╝╚██████╔╝╚█████╔╝██║░░██║
+╚═╝░░╚══╝░╚════╝░  ░░░╚═╝░░░░╚════╝░░╚═════╝░░╚════╝░╚═╝░░╚═╝
+-->
+<script>
+    function w3_open() {
+    const sidebar = document.getElementById("mySidebar");
+    const toggleBtn = document.getElementById("sidbar");
+    
+    sidebar.style.display = "block";
+    // Add small delay to allow display:block to take effect before adding active class
+    setTimeout(() => {
+        sidebar.classList.add("active");
+    }, 10);
+    toggleBtn.style.display = "none";
+}
+
+function w3_close() {
+    const sidebar = document.getElementById("mySidebar");
+    const toggleBtn = document.getElementById("sidbar");
+    
+    sidebar.classList.remove("active");
+    // Wait for transition to complete before hiding
+    setTimeout(() => {
+        sidebar.style.display = "none";
+        toggleBtn.style.display = "block";
+    }, 300); // Match this with your CSS transition duration
+}
+
+function hide() {
+    // Reuse the close function for consistency
+    w3_close();
+}
+    </script>
 </html>
